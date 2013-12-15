@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: gat_registry_development
+  database: boiler_registry_development
   pool: 5
   username: postgres
   password:
@@ -9,7 +9,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: gat_registry_test
+  database: boiler_registry_test
   pool: 5
   username: postgres
   password:
@@ -17,7 +17,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: gat_registry_production
+  database: boiler_registry_production
   pool: 5
   username: postgres
   password:

@@ -1,4 +1,4 @@
-GatRegistry::Application.routes.draw do
+BoilerRegistry::Application.routes.draw do
   resources :packages, except: [:new, :edit] do
     get 'search/:name' => 'packages#search', on: :collection
   end
