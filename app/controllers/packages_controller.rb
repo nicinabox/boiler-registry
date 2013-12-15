@@ -15,7 +15,12 @@ class PackagesController < ApplicationController
   end
 
   def search
-    packages = Package.where("name LIKE ?" , "%#{params[:name]}%")
+    if params[:name]
+      packages = Package.where("name LIKE ?" , "%#{params[:name]}%")
+    else
+      packages = Package.all
+    end
+
     render json: packages
   end
 
