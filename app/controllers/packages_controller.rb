@@ -15,7 +15,7 @@ class PackagesController < ApplicationController
   end
 
   def search
-    if params[:name].present?
+    if params[:name]
       packages = Package.where("name LIKE ?" , "%#{params[:name]}%")
     else
       packages = Package.all
